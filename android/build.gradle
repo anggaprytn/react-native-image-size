@@ -1,13 +1,11 @@
 buildscript {
-    repositories {
-        mavenCentral()
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.0'
-    }
-}
+	repositories {
+		maven { url 'https://repository.axelor.com/nexus/repository/maven-public/' }
+	}
+	dependencies {
+		classpath 'com.android.tools.build:gradle:2.3.3'
+	}
+ }
 
 apply plugin: 'com.android.library'
 
